@@ -1,0 +1,9 @@
+# Büyük Veri ve Çıktı Dosyaları (GitHub'a Yüklenmeyecekler)
+*.csv
+*.zip
+lending_club_parquet_data/
+lending_club_checkpoint/
+
+# Python ve Jupyter Sistem Dosyaları
+__pycache__/
+.ipynb_checkpoints/
