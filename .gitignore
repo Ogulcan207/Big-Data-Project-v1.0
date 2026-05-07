@@ -7,3 +7,4 @@ lending_club_checkpoint/
 # Python ve Jupyter Sistem Dosyaları
 __pycache__/
 .ipynb_checkpoints/
+lending_club_delta/ 
