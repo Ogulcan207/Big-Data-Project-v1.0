@@ -8,3 +8,6 @@ lending_club_checkpoint/
 __pycache__/
 .ipynb_checkpoints/
 lending_club_delta/ 
+
+mlruns/
+mlartifacts/

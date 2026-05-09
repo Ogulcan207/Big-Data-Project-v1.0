@@ -1,16 +1,3 @@
-"""
-Model Dataset Preparation
--------------------------
-Gold katmanından veriyi okur, ML için hazır dataset üretir:
-- Data leakage kolonlarını atar
-- Feature seçimi yapar (20-30 kolon)
-- Kategorik kolonları encode eder
-- Sayısal kolonları scale eder
-- classWeight ekler (imbalance için)
-- Train/Test split yapar
-- ml_ready Delta tablosuna yazar
-"""
-
 from pyspark.sql import SparkSession
 from pyspark.sql import functions as F
 
