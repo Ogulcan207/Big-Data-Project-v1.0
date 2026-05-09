@@ -1,0 +1,11 @@
+# Spark + Jupyter base image
+FROM jupyter/pyspark-notebook:latest
+
+# requirements.txt'yi kopyala
+COPY requirements.txt /tmp/requirements.txt
+
+# Python bağımlılıklarını yükle
+RUN pip install --no-cache-dir -r /tmp/requirements.txt
+
+# Çalışma dizinine geri dön (jupyter user için)
+WORKDIR /home/jovyan/work
