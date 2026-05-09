@@ -31,7 +31,9 @@ services:
       KAFKA_AUTO_CREATE_TOPICS_ENABLE: "true"
 
   spark-jupyter:
-    image: jupyter/pyspark-notebook:latest
+    build:
+      context: .
+      dockerfile: Dockerfile.spark
     container_name: spark-jupyter
     depends_on:
       - kafka
